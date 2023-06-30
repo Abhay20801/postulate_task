@@ -1,0 +1,47 @@
+.sign-in-page{
+    position: relative;
+    height: 100vh;
+    .background-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 90vh;
+        width: 100%;
+        overflow: hidden;
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    .sign-in-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height:60%;
+        width:40%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.598);
+        padding: 20px;
+        h1{
+            font-size:3rem; 
+            text-align: center;
+        }
+        div{
+            form{
+                input{
+                    
+                    text-align: center;
+                    border-radius:7px ;
+                    width:90%;
+                    height:15%;
+                    font-size: medium;
+                    font-weight: 900;
+                }
+                #sign-in-btn{
+                    background-color: rgb(112, 235, 112);
+                }
+            }
+        }
+    }
+}

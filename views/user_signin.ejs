@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="/css/user_signin.css">  
+<div class="sign-in-page">
+    <div class="background-image">
+        <img src="/images/hotelimage1.jpg" alt="Background Image">
+    </div>
+    <div class="sign-in-container">
+        <h1>Sign In</h1>
+        <div>
+            <!-- Form For Sign In -->
+            <form action="/users/create-session" method="POST">
+                <input type="email" name="email" placeholder="Your Email" required>
+                <br>
+                <br>
+                <input type="password" name="password" placeholder="Your Password" required>
+                <br><br>
+                <input type="submit" id="sign-in-btn" value="Sign In">
+            </form>
+        </div>
+    </div>
+</div>

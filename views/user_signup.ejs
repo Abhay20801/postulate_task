@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="/css/user_signup.css">
+
+<div class="signup-container">
+    <div class="img-container">
+        <img src="/images/hotelimage1.jpg" alt="Background Image">
+        <div class="img-text">
+            <h4>Your Text</h4>
+        </div>
+    </div>
+    <div class="signup-form-container">
+        <h1>Sign Up!!</h1>
+        <div>
+        <!-- Form For Sign up -->
+        <form action="/users/create" method="POST">
+            <input type="text" name="name" placeholder="Your name" required>
+            <br><br>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <br><br>
+            <input type="password" name="password" placeholder="Your Password" required>
+            <br><br>
+            <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+            <br><br>
+            <input type="submit" value="Sign Up" id="sign-up-btn">
+        </form>
+    </div>
+</div>
+</div>

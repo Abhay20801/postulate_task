@@ -1,0 +1,48 @@
+.signup-container {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  border: 1px solid black; }
+  .signup-container .img-container {
+    position: relative;
+    height: auto;
+    width: 48%;
+    overflow: hidden; }
+    .signup-container .img-container img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover; }
+  .signup-container .img-text {
+    position: absolute;
+    border: 1px solid green;
+    top: 50%;
+    left: 50%;
+    width: 40%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.598);
+    text-align: center; }
+  .signup-container .signup-form-container {
+    width: 52%;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    align-items: center;
+    border-left: 1px solid lightgrey; }
+    .signup-container .signup-form-container h1 {
+      font-size: 3rem;
+      text-align: center; }
+    .signup-container .signup-form-container div {
+      width: 100%;
+      height: 100%; }
+      .signup-container .signup-form-container div form {
+        text-align: center; }
+        .signup-container .signup-form-container div form input {
+          text-align: center;
+          border-radius: 7px;
+          left: 100px;
+          width: 50%;
+          height: 10%;
+          font-size: medium;
+          font-weight: 900; }
+        .signup-container .signup-form-container div form #sign-up-btn {
+          background-color: #70eb70; }
