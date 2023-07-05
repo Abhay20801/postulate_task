@@ -35,3 +35,36 @@ radioButtons.forEach(radio => {
         selectedContent.style.display = 'block';
     });
 });
+
+// Guest room Picker
+// Get necessary elements
+const guestRoomInput = document.getElementById('guest-room-input');
+const popupDiv = document.getElementById('popup-div');
+const doneBtn = document.getElementById('done-btn');
+
+let clickCount = 0;
+
+// Function to show or hide the popup div based on click count
+function togglePopup() {
+  clickCount++;
+  if (clickCount % 2 !== 0) {
+    popupDiv.style.display = 'block';
+  } else {
+    popupDiv.style.display = 'none';
+  }
+}
+
+// Function to update the input with selected values
+function updateInput() {
+  const noOfRooms = document.getElementById('no-of-rooms').value;
+  const noOfAdults = document.getElementById('no-of-adults').value;
+  const noOfChildren = document.getElementById('no-of-children').value;
+
+  guestRoomInput.value = `${noOfRooms} Room(s), ${noOfAdults} Adult(s), ${noOfChildren} Child(ren)`;
+
+  togglePopup();
+}
+
+// Event listeners
+guestRoomInput.addEventListener('click', togglePopup);
+doneBtn.addEventListener('click', updateInput);
